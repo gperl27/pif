@@ -19,14 +19,18 @@ export function Posts(props: Props) {
             <Grid item>
                 {props.posts.map(post => {
                     return (
-                        <div>
-                            <Typography variant={'subtitle'}>
-                                {post}
-                            </Typography>
-                            <Button variant="contained">
-                                Cheer
-                            </Button>
-                        </div>
+                        <Grid container>
+                            <Grid item>
+                                <Typography variant={'subtitle1'}>
+                                    {post}
+                                </Typography>
+                            </Grid>
+                            <Grid item>
+                                <Button variant="contained">
+                                    Cheer
+                                </Button>
+                            </Grid>
+                        </Grid>
                     )
                 })}
             </Grid>

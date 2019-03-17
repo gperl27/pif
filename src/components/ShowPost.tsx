@@ -3,8 +3,8 @@ import Typography from '@material-ui/core/Typography';
 import Grid from "@material-ui/core/Grid";
 
 interface Props {
-   post: string;
-   cheers: string[];
+    post: string;
+    cheers: string[];
 }
 
 export function ShowPost(props: Props) {
@@ -23,11 +23,11 @@ export function ShowPost(props: Props) {
             </Grid>
             <Grid item>
                 {props.cheers.map(cheer => {
-                   return (
-                       <Typography variant={'subtitle'}>
-                           {cheer}
-                       </Typography>
-                   )
+                    return (
+                        <Typography variant={'subtitle1'}>
+                            {cheer}
+                        </Typography>
+                    )
                 })}
             </Grid>
         </Grid>
