@@ -10,6 +10,7 @@ import {Post} from "../components/CreatePost";
 import Paper from "@material-ui/core/Paper";
 import {ShowPost} from "../components/ShowPost";
 import {Posts} from "../components/Posts";
+import {Background} from "../components/Background";
 
 const DemoContainer = function (props) {
     return (
@@ -33,6 +34,13 @@ storiesOf('Button', module)
 
 storiesOf('App', module)
     .add('demo', () => <App/>);
+
+storiesOf('Layout', module)
+    .add('Background', () => (
+        <Background>
+            <div style={{height: '500px'}}/>
+        </Background>
+    ));
 
 storiesOf('Posts', module)
     .add('Create Post', () => (
@@ -64,4 +72,3 @@ storiesOf('Posts', module)
             </DemoContainer>
         )
     })
-
